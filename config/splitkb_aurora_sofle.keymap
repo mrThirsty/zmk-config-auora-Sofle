@@ -38,7 +38,7 @@
             tap-ms = <150>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
-    }
+    };
 
     keymap {
         compatible = "zmk,keymap";
