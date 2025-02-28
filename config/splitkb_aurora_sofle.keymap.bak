@@ -36,7 +36,7 @@
             compatible = "zmk,behavior-sensor-rotate";
             #sensor-binding-cells = <0>;
             tap-ms = <150>;
-            bindings = <&msc SCRL_UP>, <&msc SCRL_DOWN>;
+            bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
         };
     };
 
@@ -52,11 +52,11 @@
 // | SHIFT |  Z  |  X  |  C   |  V   |  B   |   "["  |  |  "]"  |  N   |  M    |  ,    |  .   |   /   | SHIFT |
 //               |CTRL | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   | RALT |
             bindings = <
-&kp ESC   &kp GB_N1 &kp GB_N2 &kp GB_N3 &kp GB_N4 &kp GB_N5                          &kp GB_N6 &kp GB_N7 &kp GB_N8    &kp GB_N9  &kp GB_N0   &kp GB_TILDE
-&kp TAB   &kp GB_Q  &kp GB_W  &kp GB_E  &kp GB_R  &kp GB_T                           &kp GB_Y  &kp GB_U  &kp GB_I     &kp GB_O   &kp GB_P    &kp MINUS
-&kp LSHFT &kp GB_A  &kp GB_S  &kp GB_D  &kp GB_F  &kp GB_G                           &kp GB_H  &kp GB_J  &kp GB_K     &kp GB_L   &kp GB_SEMI &kp GB_SINGLE_QUOTE
-&kp LCTRL &kp GB_Z  &kp GB_X  &kp GB_C  &kp GB_V  &kp GB_B  &kp GB_LBKT  &kp GB_RBKT &kp GB_N  &kp GB_M  &kp GB_COMMA &kp GB_DOT &kp GB_FSLH &kp RSHFT
-                    &kp LCTRL &kp LALT  &kp LGUI  &mo 1     &kp GB_SPACE &kp RET     &mo 2     &kp BSPC  &kp RGUI     &kp RALT
+&kp ESC   &kp N1 &kp N2    &kp GB_N3 &kp N4   &kp N5                     &kp N6 &kp N7   &kp N8    &kp N9   &kp N0   &kp GRAVE
+&kp TAB   &kp Q  &kp W     &kp E     &kp R    &kp T                      &kp Y  &kp U    &kp I     &kp O    &kp P    &kp MINUS
+&kp LSHFT &kp A  &kp S     &kp D     &kp F    &kp G                      &kp H  &kp J    &kp K     &kp L    &kp SEMI &kp SQT
+&kp LCTRL &kp Z  &kp X     &kp C     &kp V    &kp B  &kp LBKT   &kp RBKT &kp N  &kp M    &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
+                 &kp LCTRL &kp LALT  &kp LGUI &mo 1  &kp SPACE  &kp RET  &mo 2  &kp BSPC &kp RGUI  &kp RALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &enc_scrl>;
@@ -71,11 +71,11 @@
 // |       |     |     |      |      |      |        |  |       |      |  _    |  +    |  {   |   }   |  "|"  |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3  &bt BT_SEL 4                    &kp C_PREV   &kp C_PP     &kp C_NEXT  &kp C_MUTE &trans      &trans
-&kp F1       &kp F2           &kp F3            &kp F4            &kp F5        &kp F6                          &kp F7       &kp F8       &kp F9      &kp F10     &kp F11     &kp F12
-&kp GB_GRAVE &kp GB_EXCL      &kp GB_AT         &kp GB_EURO       &kp GB_DOLLAR &kp GB_HASH                     &kp GB_CARET &kp GB_AMPS  &kp GB_STAR &kp GB_LPAR &kp GB_RPAR &kp GB_TILDE
-&trans       &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans        &trans       &trans   &trans    &trans       &kp GB_MINUS &kp GB_PLUS &kp GB_LBRC &kp GB_RBRC &kp GB_PIPE
-                              &trans            &trans            &trans        &trans       &trans   &trans    &trans       &kp DEL      &trans      &trans
+&bt BT_CLR &bt BT_SEL 0     &bt BT_SEL 1      &bt BT_SEL 2      &bt BT_SEL 3 &bt BT_SEL 4                 &trans    &trans    &trans    &trans    &trans    &trans
+&kp F1     &kp F2           &kp F3            &kp F4            &kp F5       &kp F6                       &kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12
+&kp GRAVE  &kp EXCL         &kp AT            &kp HASH          &kp DOLLAR   &kp PRCNT                    &kp CARET &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR  &kp GB_HASH
+&trans     &ext_power EP_ON &ext_power EP_OFF &ext_power EP_TOG &trans       &trans    &trans   &trans    &trans    &kp MINUS &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE
+                            &trans            &trans            &trans       &trans    &trans   &trans    &trans    &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &enc_scrl>;
@@ -90,11 +90,11 @@
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //               |     |      |      |      |        |  |       |      |       |       |      |
             bindings = <
-&trans    &trans    &trans    &trans    &trans    &trans                  &trans      &trans    &trans    &trans    &trans    &trans
-&kp GRAVE &kp GB_N1 &kp GB_N2 &kp GB_N3 &kp GB_N4 &kp GB_N5               &kp GB_N6   &kp GB_N7 &kp GB_N8 &kp GB_N9 &kp GB_N0 &trans
-&kp F1    &kp F2    &kp F3    &kp F4    &kp F5    &kp F6                  &trans      &kp LEFT  &kp DOWN  &kp UP    &kp RIGHT &trans
-&kp F7    &kp F8    &kp F9    &kp F10   &kp F11   &kp F12   &trans &trans &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT  &kp RBKT  &kp BSLH
-                    &trans    &trans    &trans    &trans    &trans &trans &trans      &trans    &trans    &trans
+&trans    &trans &trans &trans  &trans  &trans                       &trans      &trans    &trans    &trans   &trans    &trans
+&kp GRAVE &kp N1 &kp N2 &kp GB_N3 &kp N4  &kp N5                       &kp N6      &kp N7    &kp N8    &kp N9   &kp N0    &trans
+&kp F1    &kp F2 &kp F3 &kp F4    &kp F5  &kp F6                       &trans      &kp LEFT  &kp DOWN  &kp UP   &kp RIGHT &trans
+&kp F7    &kp F8 &kp F9 &kp F10   &kp F11 &kp F12   &trans   &trans    &kp KP_PLUS &kp MINUS &kp EQUAL &kp LBKT &kp RBKT  &kp BSLH
+                 &trans &trans    &trans  &trans    &trans   &trans    &trans      &trans    &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &enc_scrl>;
