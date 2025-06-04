@@ -84,17 +84,17 @@
         raise_layer {
             display-name = "Upper";
 // ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |   7   |   8   |  9   |   0   |       |
-// |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ^   |  ->   |       |
+// |       |  1  |  2  |  3   |  4   |  5   |                   |      |       |       |      |       |       |
+// |   `   |  6  |  7  |  8   |  9   |  0   |                   |      |       |   ^   |      |       |       |
+// |   F1  |  F2 |  F3 |  F4  |  F5  |  F6  |                   |      |   <-  |   v   |  ->  |       |       |
 // |   F7  |  F8 |  F9 |  F10 |  F11 |  F12 |        |  |       |  +   |   -   |   =   |  [   |   ]   |   \   |
 //               |     |      |EP TOG|      |        |  |       |      |       |EP TOG |      |
             bindings = <
-&trans &trans    &trans    &trans    &trans            &trans                 &trans      &trans    &trans             &trans    &trans    &trans
-&trans &kp GB_N1 &kp GB_N2 &kp GB_N3 &kp GB_N4         &kp GB_N5              &kp GB_N6   &kp GB_N7 &kp GB_N8          &kp GB_N9 &kp GB_N0 &trans
-&trans &trans    &trans    &trans    &trans            &trans                 &trans      &kp LEFT  &kp DOWN           &kp UP    &kp RIGHT &trans
-&trans &trans    &trans    &trans    &trans            &trans   &trans &trans &kp KP_PLUS &kp MINUS &kp EQUAL          &kp LBKT  &kp RBKT  &trans
-                 &trans    &trans    &ext_power EP_ON &trans   &trans &trans &trans      &trans    &ext_power EP_ON  &studio_unlock
+&trans &kp GB_N1 &kp GB_N2 &kp GB_N3 &kp GB_N4         &kp GB_N5              &trans      &trans    &trans            &trans    &trans    &trans
+&trans &kp GB_N6 &kp GB_N7 &kp GB_N8 &kp GB_N9         &kp GB_N0              &trans      &trans    &kp UP            &trans    &trans    &trans
+&trans &trans    &trans    &trans    &trans            &trans                 &trans      &kp LEFT  &kp DOWN          &kp RIGHT &trans &trans
+&trans &trans    &trans    &trans    &trans            &trans   &trans &trans &kp KP_PLUS &kp MINUS &kp EQUAL         &kp LBKT  &kp RBKT  &trans
+                 &trans    &trans    &ext_power EP_ON  &trans   &trans &trans &trans      &trans     &ext_power EP_ON &studio_unlock
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &enc_scrl>;
