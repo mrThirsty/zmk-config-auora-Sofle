@@ -75,7 +75,7 @@
 &kp F1     &kp F2       &kp F3       &kp F4       &kp F5        &kp F6                          &kp F7     &kp F8       &kp F9      &kp F10     &kp F11     &kp F12
 &trans     &kp GB_EXCL  &kp GB_AT    &kp GB_EURO  &kp GB_DOLLAR &kp GB_HASH                     &kp CARET  &kp GB_AMPS  &kp GB_STAR &kp GB_LPAR &kp GB_RPAR &kp TILDE
 &trans     &trans       &trans       &trans       &trans        &trans       &trans   &trans    &trans     &kp GB_MINUS &kp GB_PLUS &kp GB_LBRC &kp GB_RBRC &kp GB_PIPE
-                        &trans       &trans       &trans        &trans       &kp RET   &trans    &trans     &kp DEL      &trans    &trans
+                        &trans       &trans       &trans        &trans       &trans   &trans    &trans     &kp DEL      &trans    &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &enc_scrl>;
@@ -94,7 +94,7 @@
 &trans &kp GB_N6 &kp GB_N7 &kp GB_N8 &kp GB_N9         &kp GB_N0              &trans      &trans    &kp UP            &trans    &trans    &trans
 &trans &trans    &trans    &trans    &trans            &trans                 &trans      &kp LEFT  &kp DOWN          &kp RIGHT &trans &trans
 &trans &trans    &trans    &trans    &trans            &trans   &trans &trans &kp KP_PLUS &kp MINUS &kp EQUAL         &kp LBKT  &kp RBKT  &trans
-                 &trans    &trans    &ext_power EP_ON  &trans   &trans &trans &trans      &trans     &ext_power EP_ON &studio_unlock
+                 &trans    &trans    &ext_power EP_ON  &trans   &kp RET &trans &trans      &trans     &ext_power EP_ON &studio_unlock
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &enc_scrl>;
